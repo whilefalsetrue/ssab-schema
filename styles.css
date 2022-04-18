@@ -111,7 +111,7 @@ td:first-of-type {
 
     font-weight: 600;
 }
-.team1, .team2, .team3, .team4, .team5 {display: none;}
+/* .team1, .team2, .team3, .team4, .team5 {display: none;} */
 .shift-first {
     color: var(--pc-first-100);
     background: var(--pc-first);
