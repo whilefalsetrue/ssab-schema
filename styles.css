@@ -148,8 +148,7 @@ td:first-of-type {
     justify-content: space-between;
 
     width: 330px;
-    height: 75px;
-    padding: 0 45px;
+    padding: 25px 45px;
     border-radius: 20px;
     background: var(--nc-800);
     outline: 2px solid var(--nc-900);
@@ -181,12 +180,17 @@ label span {margin-left: 4px;}
 label:hover {cursor: pointer;}
 
 @media (max-width: 700px) {
-    td {
-        font-size: 16px!important;
+    *, td:first-of-type {
+        font-size: 16px;
     }
 
     td:not(:first-of-type) {
         padding: 5px;
         gap: 5px;
     }
+
+    .settings {
+        width: 70vw;
+        padding: 15px 10vw;
+    } .settings >* {font-size: 18px;}
 }
