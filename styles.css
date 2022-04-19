@@ -147,7 +147,7 @@ td:first-of-type {
     align-items: center;
     justify-content: space-between;
 
-    width: 330px;
+    width: min(75vw, 330px);
     padding: 25px 45px;
     border-radius: 20px;
     background: var(--nc-800);
@@ -181,16 +181,25 @@ label:hover {cursor: pointer;}
 
 @media (max-width: 700px) {
     *, td:first-of-type {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     td:not(:first-of-type) {
         padding: 5px;
         gap: 5px;
     }
-
     .settings {
-        width: 70vw;
-        padding: 15px 10vw;
-    } .settings >* {font-size: 18px;}
+        padding: 25px 8vw;
+    }
+}
+
+@media (max-width: 400px) {
+    .settings p {
+        display: none;
+    }
+}
+@media (max-width: 250px) {
+    .settings * {
+        font-size: 16px!important;
+    }
 }
